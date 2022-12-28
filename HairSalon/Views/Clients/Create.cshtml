@@ -5,9 +5,14 @@
 {
   @Html.LabelFor(model => model.ClientName)
   @Html.TextBoxFor(model => model.ClientName)
+
   @Html.LabelFor(model => model.HairType)
   @Html.TextBoxFor(model => model.HairType)
-  <input type="submit" value="Add new client" />
+
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId")
+
+  <input type="submit" value="Add new client" class="btn btn-danger" />
 }
 
 <@Html.ActionLink("Back to stylist", "Index")</p>

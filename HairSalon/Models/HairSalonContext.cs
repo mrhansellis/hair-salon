@@ -1,13 +1,13 @@
-using Microsofgt.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Models
 {
-  public class HairSalonContext : dbContext
+  public class HairSalonContext : DbContext
   {
     public DbSet<Stylist> Stylists { get; set; }
     public DbSet<Client> Clients { get; set; }
 
-    public ToDoListContext(DbContextOptions options) : base(options) { }
+    public HairSalonContext(DbContextOptions options) : base(options) { }
   }
 
 }

@@ -5,4 +5,5 @@
 <hr />
 
 <h3>@Html.DisplayNameFor(model => model.ClientName): @Html.DisplayFor(model => model.ClientName)</h3>
-<@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Edit Client", "Edit", new {id = Model.ClientId })</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>

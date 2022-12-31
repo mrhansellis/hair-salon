@@ -58,7 +58,7 @@ namespace HairSalon.Controllers
     {
       _db.Clients.Update(client);
       _db.SaveChanges();
-      return RedirectToAction("Index");
+      return RedirectToAction("Index", "Stylists");
     }
 
     public ActionResult Delete(int id)
@@ -73,7 +73,7 @@ namespace HairSalon.Controllers
       Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
       _db.Clients.Remove(thisClient);
       _db.SaveChanges();
-      return RedirectToAction("Index");
+      return RedirectToAction("Index", "Stylists");
     }
   }
 }

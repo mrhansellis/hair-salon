@@ -1,0 +1,21 @@
+nav {
+  background-color: rgb(220, 214, 214);
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 5;
+  padding: 5;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
